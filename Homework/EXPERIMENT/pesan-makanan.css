@@ -1,0 +1,55 @@
+body {
+    background: rgb(0, 197, 115);
+  background: linear-gradient(0deg, rgba(0, 197, 115, 0.4014648095566351) 0%, rgba(255, 255, 255, 1) 100%);
+}
+main {
+    margin-bottom: 50px;
+}
+main h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+main div img {
+    float: left; 
+    width: 400px;
+    margin-right: 50px;
+}
+main .pedesLevel {
+    display: block;
+    font-weight: bold;
+}
+main .porsi {
+    display: block;
+    font-weight: bold;
+}
+main .keteranganMakanan {
+    text-indent: 30px;
+}
+
+.keteranganOrder button {
+    display: block;
+}
+.select {
+    background-color: rgb(117, 224, 179);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5px;
+}
+.catatanResto {
+    width: 300px; 
+    height: 150px;
+}
+option {
+    background-color: black;
+    color: rgb(117, 224, 179);
+}
+button {
+    background-color: rgb(117, 224, 179);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    position: relative;
+    bottom: -30px;
+    left: 450px;
+}

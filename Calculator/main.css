@@ -1,0 +1,39 @@
+.container {
+    width: 80%;
+    background-color: aquamarine;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+input {
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+}
+
+.number1 , .number2 {
+    margin: 15px;
+}
+
+.operator {
+    margin: 15px;
+}
+.operator input {
+    padding: 5px 20px;
+}
+
+.clearButton {
+    display: block;
+    margin: 25px auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+.clearButton:hover {
+    background-color: white;
+    color: black;
+}

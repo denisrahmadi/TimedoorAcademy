@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>HTML & CSS Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  </head>
+  <body>
+  <div id="app">
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <ul class="menu-bar" type="none">
+          <span class="logo"><a href="#">KEDAI ENAK</a></span>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Discount</a></li>
+          <li>
+            <a href="#">Menu <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu" type="none">
+              <li><a href="#mainCourse">Makanan</a></li>
+              <li><a href="#drink">Minuman</a></li>
+              <li><a href="#">Snack</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="jumbotron">
+        <h1><span>Pesan makan apapun, kapanpun, dimanapun jadi lebih mudah</span></h1>
+        <button><a href="wa.me/6282211373658">Pesan Sekarang</a></button>
+      </div>
+    </header>
+
+    <main>
+  
+      <!-- Intro before menu -->
+      <section >
+        <h2 class="introMenu" >Kamu suka makan apa jam segini?</h2>
+        <br />
+        <p>Temukan menu favoritmu mulai dari makanan sampai minuman, panas atau dingin, pedas atau manis</p>
+      </section>
+
+      <!-- List Menu  -->
+      <section>
+        <div class="foodWrapper">
+          <h2>Makanan</h2>
+          <ul type="none" id="ulFood" style="display: flex"></ul>
+
+        </div>
+        <div class="drinkWrapper">
+          <h2>Minuman</h2>
+          <ul type="none" id="ulDrink" style="display: flex"></ul>
+        </div>
+      </section>
+
+      <!-- Modal buy makanan -->
+      <section class="modal" id="modal">
+        <div class="content-modal" id="content-modal">
+          <button class="close-modal" id="close-modal" onclick="hideModal()">&times;</button><br />
+          <p class="text-modal">Succes add to your order list</p>
+          <button class="button-modal" id="button-modal" onclick="hideModal()">OK</button>
+        </div>
+      </section>
+
+      <!-- Our Resto -->
+      <section class="ourResto">
+        <h2 class="judulResto">Temukan kami di kotamu</h2>
+        <ul id="cabangResto" class="cabangResto"></ul>
+      </section>
+
+      <!-- Testimoni -->
+      <section>
+        <h1 class="judulTestimoni">Testimoni</h1>
+        <ul style="display: flex" type="none">
+          <li class="card">
+            <p class="ulasan"><i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsum vel commodi ipsam neque voluptas consequatur sunt. Velit quasi rem debitis quia repudiandae voluptas quam nihil libero, </i></p>
+            <p class="namaPengunjung"><b>{{ customerName[0] }}</b></p>
+            <p class="namaPengunjung"><b>Umur</b></p>
+          </li>
+          <li class="card">
+            <p class="ulasan"><i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsum vel commodi ipsam neque voluptas consequatur sunt. Velit quasi rem debitis quia repudiandae voluptas quam nihil libero, </i></p>
+            <p class="namaPengunjung"><b>{{customerName[1]}}</b></p>
+            <p class="namaPengunjung"><b>Umur</b></p>
+          </li>
+          <li class="card">
+            <p class="ulasan"><i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsum vel commodi ipsam neque voluptas consequatur sunt. Velit quasi rem debitis quia repudiandae voluptas quam nihil libero, </i></p>
+            <p class="namaPengunjung"><b>{{customerName[2]}}</b></p>
+            <p class="namaPengunjung"><b>Umur</b></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <table class="footerTable">
+        <tr class="rowFooterTable">
+          <td rowspan="1">
+            <p class="footerTagline">
+              Lebih dari sekedar <br />
+              perut <span class="brandAwareness">kenyang</span>
+            </p>
+          </td>
+          <td>
+            <b>contact info :</b>
+            <span>
+              <p>rahmadidenis@gmail.com</p>
+            </span>
+          </td>
+          <td>
+            <b>our office :</b>
+            <p>
+              JL Boulevard Barat Raya Blok LC7.<br />
+              39-40, Klp. Gading Barat, DKI Jakarta 14240
+            </p>
+          </td>
+        </tr>
+        <tr class="rowFooterTable">
+          <td>copyright <i class="fa-regular fa-copyright"></i> 2022</td>
+          <td>
+            <ul>
+              <li><a href="#">career</a></li>
+              <li><a href="#">franchise</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </footer>        
+  </div>
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

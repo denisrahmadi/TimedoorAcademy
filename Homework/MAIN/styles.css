@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: rgb(0, 197, 115);
+  background: linear-gradient(0deg, rgba(0, 197, 115, 0.4014648095566351) 0%, rgba(255, 255, 255, 1));
+  background-size: contain;
+}
+
+header h1 {
+  text-transform: capitalize;
+  font-size: 3.5em;
+  width: 500px;
+}
+header button {
+  background-color: rgb(0, 197, 115);
+  margin: 20px 0px;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border-style: none;
+}
+button:hover {
+  background-color: rgb(255, 255, 255);
+}
+header img {
+  margin-left: 100px;
+  border-radius: 15px;
+  width: 600px;
+  height: 375px;
+}
+.headerTeksImg {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 40px;
+}
+.jumbotron {
+  margin: 30px;
+  background-image: url("https://img.freepik.com/free-vector/detailed-nasi-lemak-dish_52683-62627.jpg?w=996&t=st=1668739385~exp=1668739985~hmac=47d347db378dcca3123746f77c344b70f0bdf1f9bc90210dcd81b5a572ee11a4");
+  background-size: 1250px 500px;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 15px;
+}
+.jumbotron h1 span {
+  background-color: rgba(0, 0, 0, 0.747);
+  color: white;
+  border-radius: 15px;
+}
+.jumbotron button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: rgba(0, 197, 115, 0.541);
+  padding: 15px 5px;
+  border-radius: 25px;
+  margin: 10px 20px;
+}
+.navbar a:hover {
+  color: white;
+  border-radius: 15px;
+}
+.logo {
+  background-color: rgb(0, 0, 0);
+  padding: 8px;
+  border-radius: 15px;
+}
+.logo a {
+  color: rgb(117, 224, 179);
+}
+.menu-bar {
+  padding: 0px 20px;
+  display: flex;
+  position: relative;
+  /* left: 30%; */
+}
+.menu-bar li {
+  margin: 5px 15px;
+}
+.menu-bar li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.menu-bar span a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu-bar li:hover .dropdown-menu {
+  display: block;
+  width: 10%;
+  background: linear-gradient(rgb(117, 224, 179), white);
+  border-radius: 5px;
+}
+.dropdown-menu {
+  display: none;
+  position: fixed;
+}
+.dropdown-menu li {
+  margin-left: 0px;
+  padding: 10px;
+  border-radius: 0px 15px 15px 0px;
+}
+.dropdown-menu li:hover {
+  background-color: rgb(0, 0, 0);
+}
+.dropdown-menu li:hover a {
+  color: white;
+  text-decoration: none;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+main {
+  margin: 150px 50px 0px 50px;
+  padding-bottom: 20px;
+}
+main section:first-child {
+  text-align: center;
+}
+
+.introMenu {
+  font-size: 2em;
+}
+
+.foodWrapper {
+    margin: 100px auto;
+}
+
+.card {
+    margin: 0px 20px;
+    width: 300px;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transform: scale(1);
+    transition: 0.9s;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.9s;
+    background-color: rgb(255, 255, 255);
+}
+
+.foodWrapper h2 , .drinkWrapper h2 {
+  margin-bottom: 30px;
+  text-decoration: underline double rgb(0, 255, 119) ;
+}
+
+.wrapperMenu .card p:nth-child(1) {
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+.wrapperMenu .card img {
+  margin-bottom: 30px;
+}
+.wrapperMenu .card p:nth-child(3){
+  margin-bottom: 30px;
+}
+.wrapperMenu .card p:nth-child(4){
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.wrapperMenu .card button {
+  margin-bottom:  20px;
+    padding: 15px 35px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-color: rgb(0, 255, 119);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapperMenu .card button:hover {
+    color: rgb(0, 255, 119);
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+ 
+
+/* ----------------------------------- */
+/*------------- Modal -------------*/
+/* ----------------------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgb(0, 0, 0, .4);
+}
+.content-modal {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid green;
+  width: 20%;
+  border-radius: 20px;
+  box-shadow: -2px 0px 19px 6px rgba(0,197,115,0.57);
+}
+.close-modal {
+  position: relative;
+  padding: 5px;
+  left: 95%;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+.close-modal:hover {
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+}
+.text-modal {
+  margin: 20px 0px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.button-modal {
+  position: relative;
+  top: 10px;
+  left: 80%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(0, 197, 115);
+}
+.button-modal:hover {
+  background-color: rgba(0, 197, 115, 0.521);
+
+}
+
+/* ------------------------------------ */
+/* -------------Order List------------- */
+/* ------------------------------------ */
+.order-list {
+  margin: 25px;
+  background-color: white;
+  padding: 10px;
+}
+.order-list h1 {
+  text-align: center;
+}
+.order-list .table-order {
+  margin-top: 20px;
+  padding: 10px;
+}
+.order-list .table-order h2 {
+  margin-top: 20px;
+}
+.order-list table {
+  border-collapse: collapse;
+}
+.order-list .table-order th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+.order-list .table-order td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+}
+.table-order table tr td select option{
+  padding: 5px;
+}
+.table-order table tr td input {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+}
+/* ----------------------------------- */
+/*------------- Our Resto -------------*/
+/* ----------------------------------- */
+
+.ourResto {
+  margin: 100px 0px;
+  
+}
+.restoWrapper {
+  background-color: white;
+}
+
+.judulResto {
+  text-align: center; 
+  font-size: 2em; 
+}
+
+.cabangResto {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+  list-style: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+}
+.cabangResto > li {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px ;
+  font-weight: bold;
+}
+
+.cabangResto li:hover {
+  background-color: rgb(0, 255, 119);
+}
+/* ----------------------------------- */
+/* -------------Testimoni------------- */
+/* ----------------------------------- */
+.judulTestimoni {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card {
+  background-color: rgba(255, 255, 255);
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  margin: 0px 20px;
+}
+.card .ulasan {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+.namaPengunjung {
+  text-align: end;
+}
+
+/* ----------------------------------- */
+/* -------------Footer---------------- */
+/* ----------------------------------- */
+footer {
+  background-color: rgba(0, 197, 115, 0.541);
+  color: rgb(0, 0, 0);
+  padding-top: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.footerTable {
+  margin: auto;
+}
+.footerTable tr td {
+  margin: 20px;
+  padding: 20px;
+}
+.footerTagline {
+  font-size: 2em;
+}
+.footerTable tr td ul {
+  display: inline-flex;
+  list-style: none;
+}
+.footerTable tr td ul a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footerTable tr td ul li {
+  margin: 0px 5px;
+}
+.footerTable tr td ul li :hover {
+  text-decoration: underline;
+  transform: scale(2);
+  transition: 0.5s;
+}
+.brandAwareness {
+  font-weight: bold;
+  background-color: black;
+  border-radius: 10px;
+  color: rgb(0, 255, 119);
+  padding: 5px;
+  line-height: 1.5;
+}
+.contactInfoStyle {
+  font-size: 10pxpx;
+}

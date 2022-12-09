@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="practice.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="foodMenu">Menu Makanan</h1>
+    <div class="flex">
+        <div class="food-option">
+            <button type="button" onclick="detail('ramen')" id="ramen">Ramen</button>
+            <button type="button" onclick="detail('pizza')" id="pizza">Pizza</button>
+            <button type="button" onclick="detail('kimchi')" id="kimchi">Kimchi</button>
+            <button type="button" onclick="detail('rendang')" id="rendang">Rendang</button>
+        </div>
+        <div class="food-detail">
+            <img id="image" src="images/detail.jpg" alt="Gambar Makanan">
+            <h1 id="foodTitle"></h1>
+            <h2 id="foodOrigin"></h2>
+            <h2 id="foodMaterial"></h2>
+            <h2 id="foodPrice"></h2>
+        </div>
+    </div>
+
+<script src="practice.js"></script>
+</body>
+</html>

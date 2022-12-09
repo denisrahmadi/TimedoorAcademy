@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <main class="container">
+        <h1>Calculator</h1>
+        <input type="text" class="number1" id="number1" placeholder="Masukan angka" onkeyup="count()">
+        <input type="text" class="number2" id="number2" placeholder="Masukan angka" onkeyup="count()">
+        <div class="operator">
+            <input type="button" value="+" class="+" id="+" onclick="count('+')" >
+            <input type="button" value="-" class="-" id="-" onclick="count('-')" >
+            <input type="button" value="*" class="*" id="*" onclick="count('*')" >
+            <input type="button" value="/" class="/" id="/" onclick="count('/')" >
+        </div>
+        <input type="text" class="total" id="total" placeholder="Total">
+        <button class="clearButton" id="clearButton" onclick="clearButton()">C L E A R</button>
+    </main>
+
+
+<script src="main.js"></script>
+</body>
+</html>
